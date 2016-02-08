@@ -4,43 +4,52 @@
 
   <head>
 
-    <meta charset="utf-8"></meta>
+    <meta charset="utf-8">
     <title>Miami Beach Art Basel SignUp</title>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="screen.js"></script>
+    <link rel="stylesheet" type="text/css" href="screen.css">
 
   </head>
   <body>
     <h1>Art Basel</h1>
     <h1> Miami Beach</h1>
-    <ul class="tabs">
-      <li class="activeTab"><a class="tabControl" href="patronsTab">Patrons</a></li>
-      <li><a class="tabControl" href="artistTab">Artist</a></li>
-      <li><a class="tabControl" href="galleriesTab">Galleries</a></li>
-    </ul>
 
-    <div class="activePanel" id="patronsPanel">
+    <!-- Nav Bar Made of Tabs for the Panels -->
+    <ul class="tabs">
+      <li class="activeTab"><a class="tabControl" href="#patronsTab">Patrons</a></li>
+      <li><a class="tabControl" href="#artistTab">Artist</a></li>
+      <li><a class="tabControl" href="#galleriesTab">Galleries</a></li>
+    </ul>
+     <!-- Panel for the 1st tab- Patrons -->
+    <div class="activePanel" id="patronsTab">
       <h3>Sign Up here to receive information on Special Events, Guided Tours,
         Art Gallery Showings, etc.</h3>
-      <label type="text" name="contact">Preferred Method of Contact</label>
+      <label>Preferred Method of Contact</label>
       <select name="contactOptions">
         <option value="email">Email</option>
         <option value="textMessage">Text Message</option>
         <option value="mail">Mailing</option>
       </select>
     </div>
-    <div class="activePanel" id="artistPanel">
-      <h3>If you would like to register as an Artist, Please fill out the folling
-      infomration, and someone will be in touch with you soon.</h3>
-      <form action="" method="" id="">
+    <!-- Panel for the 2nd tab-Artist -->
+    <div class="activePanel" id="artistTab">
+      <h3>If you would like to register as an Artist, Please fill out the following
+      information, and someone will be in touch with you soon.</h3>
+      <form id="artistForm">
         <label >Name<input type="text" name="name"></label>
         <label >Phone<input type="number" name="phone"></label>
         <label >Email<input type="email" name="email"></label>
         <label >Create a Password<input type="password" name="password"></label>
         <label >Name<input type="text" name="password"></label>
-
+      </form>
     </div>
-    <div class="activePanel" id="galleriesPanel">
+    <!-- Panel for the 3rd tab-Galleries -->
+    <div class="activePanel" id="galleriesTab">
       <h3>To speak one of our Representatives about registering your Art Gallery
-        with us, please fill out the form or you can contact us at 305-999-9999.<label type="text" name="contact">Preferred Method of Contact</label>
+        with us, please fill out the form or you can contact us at 305-999-9999</h3>
         <label >Name<input type="text" name="name"></label>
         <label >Title<input type="text" name="title"></label>
         <label >Gallery Name<input type="text" name="galName"></label>
@@ -48,10 +57,7 @@
         <label >Email<input type="email" name="email"></label>
     </div>
 
-
-
-
-
+<p>This work is licensed under a Creative Commons Attribution-NoDerivs 3.0 Unported License.</p>
 
 
 
